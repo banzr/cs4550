@@ -2,9 +2,199 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Task 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"
+          integrity="sha256-/Z28yXtfBv/6/alw+yZuODgTbKZm86IKbPE/5kjO/xY=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"
+            integrity="sha256-Bhi6GMQ/72uYZcJXCJ2LToOIcN3+Cx47AZnq/Bw1f7A=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 20px;
+
+            /* credit: https://www.pexels.com/photo/agriculture-barn-clouds-corn-235725/*/
+            /*CC0 License: No citation required or provided*/
+            background-image: url("https://static.pexels.com/photos/235725/pexels-photo-235725.jpeg");
+
+        }
+
+        .powtbl {
+            border: 1px solid crimson;
+            text-align: center;
+            width: 50%;
+            padding: 10px;
+        }
+
+
+        .round-edges {
+            border-radius: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        label {
+            display: block;
+            color: aliceblue;
+            padding-right: 15px;
+            text-align: right;
+        }
+
+        span {
+            width:20%;
+
+        }
+
+        .toc {
+            width: 20%;
+              vertical-align: text-top;
+            background-color: rgba(222,184,135,0.6);
+        }
+
+        .main-body {
+            border-top: 5px groove MediumSeaGreen;
+            padding-top: 2em;
+        }
+
+        a {
+            color: black;
+            font-style: oblique;
+            text-decoration-color: aqua;
+            text-decoration: overline;
+        }
+
+        .photo {
+            background-color: crimson;
+            border: 10px dot-dot-dash mintcream;
+            border-radius: 15px;
+        }
+
+
+        table {
+            width: 70%;
+            margin: auto;
+            border-spacing: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .row {
+            width: 70%;
+            margin: auto;
+
+            background-color: beige;
+        }
+
+        #powers {
+            width: 100% !important;
+            border-spacing: 0px !important;
+            border-collapse: unset;
+        }
+
+
+        .credits {
+            position: absolute;
+            right: 1em;
+            bottom: 3em;
+            color: mintcream;
+            font-size: xx-large;
+        }
+    </style>
+
+    <script>
+
+
+        function genPowers() {
+            var tbl = document.getElementById("powers");
+
+            for (var i = 0; i < 4; i++) {
+
+                var rownode = document.createElement("tr");
+                var col0 = document.createElement("td");
+                col0.setAttribute("class", "powtbl");
+                var col1 = document.createElement("td");
+                col1.setAttribute("class", "powtbl");
+
+                var num0 = Math.pow(2, i);
+                var num1 = Math.pow(2, i + 4);
+                col0.appendChild(document.createTextNode(num0));
+                col1.appendChild(document.createTextNode(num1));
+
+                rownode.appendChild(col0);
+                rownode.appendChild(col1);
+                tbl.appendChild(rownode);
+            }
+
+
+        }
+
+        window.addEventListener("load", genPowers, true );
+    </script>
 </head>
 <body>
+<h1>CS4550: Task 1</h1>
+
+<div class="main-body">
+<table>
+
+    <tr>
+        <td class="toc round-edges">
+            <h1><span class="green">L</span>
+                <span class="yellow">l</span>
+                <span class="blue">a</span>
+                <span class="red">m</span>
+                <span class="green">a</span>
+                <span class="yellow">s</span>
+                <span class="red">!</span></h1>
+    <ul>
+        <li><a href="https://www.w3schools.com/html/default.asp">Learn HTML</a></li>
+        <li><a href="https://www.w3schools.com/css/default.asp">Learn CSS</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Llama">Learn Llama</a></li>
+    </ul>
+        </td>
+        <td>
+            <div class="photo round-edges">
+                <img class="round-edges" src="llama-photo.jpg">
+                <label >&copy; 2007 Johann "nojhan" Dréo</label>
+            </div>
+        </td>
+    </tr>
+</table>
+<br>
+
+    <div class="row round-edges">
+        <table id="powers" class="round-edges powtbl"></table>
+    </div>
+</div>
+
+
+<div class="credits">&copy; 2018 Andrew Singley</div>
+
+
 
 </body>
 </html>

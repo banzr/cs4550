@@ -1,0 +1,40 @@
+
+Web Dev Spring 2018 HW02 Status
+
+Answer the following questions:
+
+1. What's your name?
+Andrew Singley
+
+
+2. What's the URL of the github repo with your work for this HW?
+https://github.com/banzr/cs4550
+
+
+
+3. What's the URL that you deployed to?
+http://hw02.cs4550.superkewl.xyz
+
+
+4. How many of the tutorial exercises did you really do?
+
+
+
+5. How comfortable do you feel with HTML and CSS now?
+Pretty good. I learned more about CSS
+
+
+6. How comfortable do you feel with JS and the DOM now?
+
+
+
+7. Do all four of your pages pass the W3C HTML validator?
+ (https://validator.w3.org/)
+
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Submission

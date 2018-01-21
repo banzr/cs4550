@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"
+          integrity="sha256-/Z28yXtfBv/6/alw+yZuODgTbKZm86IKbPE/5kjO/xY=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"
+            integrity="sha256-Bhi6GMQ/72uYZcJXCJ2LToOIcN3+Cx47AZnq/Bw1f7A=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        .ui.button {
+            visibility: visible;
+        }
+
+
+        body {
+            margin: 1em;
+        }
+
+        .ui.segment, .ui.segments {
+            visibility: hidden;
+        }
+
+    </style>
+
+    <script>
+        function getValue() {
+            return document.getElementById("value").textContent;
+        }
+
+        function alertValue() {
+            alert("The current value is: " + getValue() );
+        }
+
+        function incrementValue() {
+            document.getElementById("value").innerHTML = (parseInt(getValue()) + 1).toString();
+        }
+
+        function appendValue() {
+            var rest = document.getElementById("rest");
+            var para = document.createElement("p");
+            para.setAttribute("style", "visibility: visible");
+            para.appendChild(document.createTextNode(getValue().toString()));
+            rest.appendChild(para);
+        }
+
+        function onLoad() {
+            document.getElementById("alert").addEventListener("click", alertValue);
+            document.getElementById("incr").addEventListener("click", incrementValue);
+            document.getElementById("append").addEventListener("click", appendValue);
+        }
+
+
+
+        window.addEventListener("load", onLoad);
+
+    </script>
+
+</head>
+<body>
+
+<h1>Task 2</h1>
+<h1 id="value">10</h1>
+
+<div class="ui segments">
+    <div class="ui center aligned segment">
+        <button id="alert" class="ui green button labeled icon"><i class="warning sign icon"></i>Alert</button>
+    </div>
+    <div class="ui center aligned segment">
+        <button id="incr" class="ui blue button labeled icon"><i class="plus icon"></i>Increment</button>
+    </div>
+    <div class="ui center aligned segment">
+        <button id="append" class="ui red button labeled icon"><i class="warning sign icon"></i>Append</button>
+    </div>
+    <div id="rest" class="ui center aligned segment">
+    </div>
+
+
+</div>
+
+</body>
+</html>
