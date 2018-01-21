@@ -17,7 +17,7 @@ http://hw02.cs4550.superkewl.xyz
 
 
 4. How many of the tutorial exercises did you really do?
-
+7
 
 
 5. How comfortable do you feel with HTML and CSS now?
@@ -25,12 +25,12 @@ Pretty good. I learned more about CSS
 
 
 6. How comfortable do you feel with JS and the DOM now?
-
+Very comfortable.
 
 
 7. Do all four of your pages pass the W3C HTML validator?
  (https://validator.w3.org/)
-
+No.
 
 
 And here's a list of tasks for grading comments. Just leave this here:
