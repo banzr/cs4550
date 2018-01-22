@@ -30,7 +30,7 @@ Very comfortable.
 
 7. Do all four of your pages pass the W3C HTML validator?
  (https://validator.w3.org/)
-No.
+Yes.
 
 
 And here's a list of tasks for grading comments. Just leave this here:
