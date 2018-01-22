@@ -13,7 +13,7 @@ https://github.com/banzr/cs4550
 
 
 3. What's the URL that you deployed to?
-http://hw02.cs4550.superkewl.xyz
+http://www.cs4550.superkewl.xyz
 
 
 4. How many of the tutorial exercises did you really do?
