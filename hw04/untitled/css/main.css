@@ -50,15 +50,19 @@ hr {
 }
 
 .mybox:hover {
-    background-color: yellow;
+    background-color: #3d4554;
 }
 
 .mybox {
-    background-color: green; width: 8vw; height: 8vw
+    background-color: #6984af; width: 8vw; height: 8vw; border-radius: .5vw;
 }
 
 .row {
     margin-bottom: 2rem;
+}
+
+label {
+    font-size: 4vw;
 }
 
 
